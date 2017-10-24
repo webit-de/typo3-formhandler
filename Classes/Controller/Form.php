@@ -1262,7 +1262,7 @@ class Form extends AbstractController
             $this->utilityFuncs->debugMessage('using_subpart', ['###TEMPLATE_FORM' . $step . '###']);
             $this->view->setTemplate($this->templateFile, ('FORM' . $step));
 
-        } elseif (intval($step) === intval($this->globals->getSession()->get('lastStep')) + 1) {
+        } elseif ((int)$step === (int)$this->lastStep + 1) {
             $this->finished = TRUE;
         }
     }
