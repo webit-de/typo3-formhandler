@@ -1,9 +1,6 @@
-# TYPO3 Formhandler
+TYPO3 Formhandler - Patch Version
+=================================
 
-**This project is no longer maintained. Feel free to fork the repository.**
-**No further support will be given.**
-
-Build rock solid, state of the art forms in TYPO3 the painless way.
-
-Full documentation: http://www.typo3-formhandler.com
-
+:collision: The original [formhandler TYPO3 extension](https://github.com/reinhardfuehricht/typo3-formhandler)
+is no longer maintained. This is a fork, with custom patches. Feel free to 
+add your own and send pull request, we dont maintain this repository however.
