@@ -13,6 +13,8 @@ namespace Typoheads\Formhandler\Controller;
      * Public License for more details.                                       *
      *                                                                        */
 
+use Tx\FormhandlerSubscription\Controller\AjaxSubmitController;
+
 /**
  * Default controller for Formhandler
  *
@@ -1185,13 +1187,19 @@ class Form extends AbstractController
         $this->submitted = $this->isFormSubmitted();
 
         $this->globals->setSubmitted($this->submitted);
-        if ($this->globals->getSession()->get('creationTstamp') === NULL) {
-            if ($this->submitted) {
-                $this->reset($this->gp);
-                $this->findCurrentStep();
-                $this->globals->getSession()->set('currentStep', $this->currentStep);
-            } else {
-                $this->reset();
+
+        // The AJAX submit of EXT:formhandler_subscription has no session and
+        // is marked as submitted by default. Resetting the session and the current
+        // step results in initial form call instead of processing the finishers.
+        if (!($this instanceof AjaxSubmitController)) {
+            if ($this->globals->getSession()->get('creationTstamp') === NULL) {
+                if ($this->submitted) {
+                    $this->reset($this->gp);
+                    $this->findCurrentStep();
+                    $this->globals->getSession()->set('currentStep', $this->currentStep);
+                } else {
+                    $this->reset();
+                }
             }
         }
 
