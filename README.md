@@ -14,4 +14,12 @@ Installation with Composer
     composer config repositories.formhandler-patch-version vcs https://github.com/webit-de/typo3-formhandler.git
     composer require typoheads/formhandler 
 
-All patches are merged into ```master``` and tagged with a new release number.
+All patches are merged into ```master``` and tagged with a [new release number](https://github.com/webit-de/typo3-formhandler/tags).
+
+:information_source: The last official release of formhandler was version [2.4.0](https://github.com/reinhardfuehricht/typo3-formhandler/tags). 
+
+Suggestions
+-----------
+
+* Require this fork in your legacy projects which depend on `EXT:formhandler`
+* :arrow_upper_right: Migrate existing formhandler forms to the core extension [EXT:form](https://packagist.org/packages/typo3/cms-form)

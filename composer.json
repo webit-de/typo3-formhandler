@@ -14,6 +14,9 @@
 	"require": {
 		"typo3/cms-core": "^7.6 || ^8.7"
 	},
+	"suggest": {
+		"typo3/cms-form": "TYPO3 Form - Please try to migrate existing formhandler forms to this core extension"
+	},
 	"autoload": {
 		"psr-4": {
 			"Typoheads\\Formhandler\\": "Classes"
