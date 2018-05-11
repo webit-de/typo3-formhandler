@@ -22,4 +22,6 @@ Suggestions
 -----------
 
 * Require this fork in your legacy projects which depend on `EXT:formhandler`
+* Add [EXT:formhandler_clearlog_task](https://packagist.org/packages/webit-de/formhandler-clearlog-task)
+  as requirement to delete formhandler logs periodically
 * :arrow_upper_right: Migrate existing formhandler forms to the core extension [EXT:form](https://packagist.org/packages/typo3/cms-form)

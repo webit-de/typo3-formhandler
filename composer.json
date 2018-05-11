@@ -15,7 +15,8 @@
 		"typo3/cms-core": "^7.6 || ^8.7"
 	},
 	"suggest": {
-		"typo3/cms-form": "TYPO3 Form - Please try to migrate existing formhandler forms to this core extension"
+		"typo3/cms-form": "TYPO3 Form - Please try to migrate existing formhandler forms to this core extension",
+		"webit-de/formhandler-clearlog-task": "Adds the formhandler log table to the »Table garbage collection« scheduler task"
 	},
 	"autoload": {
 		"psr-4": {
