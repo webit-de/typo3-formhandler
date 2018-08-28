@@ -25,8 +25,7 @@
 		"classmap": [
 			"Resources/PHP/tcpdf/tcpdf.php",
 			"Resources/PHP/filtreatment",
-			"Resources/PHP/parsecsv.lib.php",
-			"pi1/class.tx_formhandler_pi1.php"
+			"Resources/PHP/parsecsv.lib.php"
 		]
 	},
 	"replace": {
